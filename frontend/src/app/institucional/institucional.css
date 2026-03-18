@@ -1,0 +1,165 @@
+.institucional-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.inst-header {
+  text-align: center;
+  padding: 64px 24px;
+  background-color: var(--navbar-bg); 
+  border-bottom: 1px solid var(--navbar-border);
+}
+
+.inst-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  letter-spacing: -1px;
+  color: var(--text-color);
+}
+
+.inst-subtitle {
+  font-size: 1.25rem;
+  color: #9ca3af;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Content Wrapper */
+.inst-content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 56px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  width: 100%;
+}
+
+/* Section headings */
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.icon-box.green {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--primary-color);
+}
+
+.icon-box.blue {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--primary-color);
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+/* Cards */
+.inst-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.inst-card p {
+  color: #9ca3af;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.inst-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Solid card specifically for Estatuto if needed */
+.inst-card.solid {
+  background-color: var(--switch-bg); /* slightly different shade if you want */
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-top: 12px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-download:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+/* Board Grid */
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.board-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.board-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.board-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.board-card span {
+  font-size: 1.05rem;
+  color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .board-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inst-header {
+    padding: 48px 24px;
+  }
+}

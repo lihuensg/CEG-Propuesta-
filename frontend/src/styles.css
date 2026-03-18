@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --navbar-bg: #18191a;
+  --navbar-border: #2d2d2d;
+  --link-color: #9ca3af;
+  --link-hover-color: #ffffff;
+  --link-active-bg: #2d3748;
+  --link-active-color: #ffffff;
+  --primary-color: #10B981;
+  --primary-hover: #059669;
+  --switch-bg: #18191a;
+  --card-bg: #222222;
+  --card-border: #333333;
+}
+
+[data-theme="light"] {
+  --bg-color: #f3f4f6;
+  --text-color: #111827;
+  --navbar-bg: #ffffff;
+  --navbar-border: #e5e7eb;
+  --link-color: #4b5563;
+  --link-hover-color: #111827;
+  --link-active-bg: #e5e7eb;
+  --link-active-color: #111827;
+  --switch-bg: #ffffff;
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 32px 8%;
+  max-width: 1440px;
+  margin: 0 auto;
+}

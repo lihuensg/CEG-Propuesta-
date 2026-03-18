@@ -1,0 +1,117 @@
+.servicios-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+/* Header */
+.serv-header {
+  margin-bottom: 48px;
+  text-align: left;
+}
+
+.serv-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  letter-spacing: -1px;
+  color: var(--text-color);
+}
+
+.serv-subtitle {
+  font-size: 1.25rem;
+  color: #9ca3af;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Grid */
+.serv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.serv-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.serv-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.serv-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.icon-box.green {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--primary-color);
+}
+
+.serv-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.serv-card p {
+  color: #9ca3af;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Card Button */
+.serv-btn {
+  background-color: var(--switch-bg);
+  color: var(--text-color);
+  border: 1px solid var(--card-border);
+  padding: 14px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.serv-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-hover);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .serv-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .serv-title {
+    font-size: 2.5rem;
+  }
+}
